@@ -1,6 +1,6 @@
 parameter	x	y
-grid0	0	0
-gridend	4000	4000
+grid0	1	1
+gridend	101 101 # 431	385
 n	80	80
 anisotropy	1	0.5
 depth	0.1	# fraction of grid cells, aside from initial seeds, to have field values posited
