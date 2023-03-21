@@ -9,7 +9,7 @@
 
 from numpy import *
 import pandas as pd
-from scipy.spatial import distance
+from scipy.spatial import distance 
 import scipy.stats as stats
 from scipy.interpolate import Rbf
 import matplotlib.pyplot as plt
@@ -372,5 +372,6 @@ rMode = True            # create continuous correlated random field
 fMode = False           # generate fracture networks
 paramsFile = 'field_params.txt'
 seedsFile = 'seeds.csv'
-fracFiles = ['fracSet1.txt', 'fracSet2.txt']
+fracFiles = ['fracSet1.txt']
+#fracFiles = ['fracSet1.txt', 'fracSet2.txt']
 field = FieldGen(rMode, fMode, paramsFile, seedsFile, fracFiles)
