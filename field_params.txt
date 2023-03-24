@@ -2,7 +2,7 @@ parameter	x	y   z
 grid0	1	1   0
 gridend	500	800 50
 n	80	80	10
-anisotropy		1	0.005	0.5 
+anisotropy		1	1	1 
 depth	0.1	# fraction of grid cells, aside from initial seeds, to have field values posited
 mu 	0.5 	# default mean value, if no nearby points	
 stdev0	3.0	# standard deviation and lower and upper bounds for random field value assignments	
