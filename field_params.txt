@@ -1,0 +1,19 @@
+parameter	x	y   z
+grid0	671020	2732320	640
+gridend	676770	2739320	590
+n	100	100	25
+anisotropy		1	1	1 
+depth	10	# fraction of grid cells, aside from initial seeds, to have field values posited orig: 0.1
+mu 	31.9 	# default mean value, if no nearby points (used geometric mean)
+stdev0	3.0	# standard deviation and lower and upper bounds for random field value assignments	
+lower	-3.5		
+upper	3.0		
+rsearch0	100	# search radius	
+expn	1.5	# factors for search radius reduction during filling in of grid cells	
+dmin	0.25		
+function	linear 	# basis function selection for RBF interpolator
+searchInvDst 	25 	# search radius for inverse distance weighting interpolation
+smooth 	100. 	# smoothing distance for inverse distance weighting interpolation
+rescale 	True
+rescaleMu 	0.5	# re-scale primary variable to this average orig: 0.5
+rescaleSigma 	0.8 	# re-scale primary value to this standard deviation orig: 0.8

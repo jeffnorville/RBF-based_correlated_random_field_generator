@@ -36,7 +36,7 @@ class Params:
     def __init__(self):
         # miscellaneous setup parameters
         lineInput = []        
-        inputFile = open('params.txt','r')
+        inputFile = open('c:/pyproject/RBF-based_correlated_random_field_generator/params.txt','r')
         for line in inputFile: lineInput.append(line.split())
         inputFile.close()
         self.grid0 = array([float(lineInput[1][1]), float(lineInput[1][2]), float(lineInput[1][3])])
@@ -65,7 +65,7 @@ class CoVary:
     def __init__(self):
         # define variable that co-varies with main spatially-correlated variable
         lineInput = []        
-        inputFile = open('covary.txt','r')
+        inputFile = open('c:/pyproject/RBF-based_correlated_random_field_generator/covary.txt','r')
         for line in inputFile: lineInput.append(line.split())
         inputFile.close()
         self.b = float(lineInput[0][1])
@@ -80,7 +80,7 @@ class Grid:
     def __init__(self, params):
 
         # seed points
-        points = read_csv('seeds.csv', sep=',')
+        points = read_csv('c:/pyproject/RBF-based_correlated_random_field_generator/seeds.csv', sep=',')
         x = array(points['x'])
         y = array(points['y'])
         z = array(points['z'])
