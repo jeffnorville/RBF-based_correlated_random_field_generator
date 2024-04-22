@@ -1,0 +1,8 @@
+orient	-85.
+b	400.
+db	50.
+a	90.
+Kmean	100.
+dK	5.    
+Kmin	50.
+Kmax	200.
