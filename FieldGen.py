@@ -2,7 +2,7 @@
 #
 # FieldGen.py - a spatially-correlated random 2-D field generator
 #
-# by Walt McNab
+# by Walt McNab, updates by Jeff Norville
 #
 #############################################################################
 
